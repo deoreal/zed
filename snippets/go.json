@@ -1,0 +1,16 @@
+{
+  "HTTP handler": {
+    "prefix": "handler",
+    "body": [
+      "func ${1:name}(w http.ResponseWriter, r *http.Request) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "HTTP handler function"
+  },
+  "iferr": {
+    "prefix": "iferr",
+    "body": ["if err != nil {", "\t$0", "\treturn err", "\t}"],
+    "description": "if err block"
+  }
+}
